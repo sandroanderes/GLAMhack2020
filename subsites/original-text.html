@@ -37,14 +37,16 @@
       <!-- NavItems-->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto mr-5">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="/index.html">Home </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/subsites/original-text.html">Original text <span class="sr-only">(current)</span></a>
+          <li class="nav-item active">
+            <a class="nav-link" href="/subsites/original-text.html">Original text <span
+                class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/subsites/dataset.html">Dataset Overview <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/subsites/dataset.html">Dataset Overview <span
+                class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -70,42 +72,63 @@
     <section class="row col-12">
       <h1>This is our Glamhack Project!</h1>
       <article class="col-12">
-        <h2>This is the Homepage</h2>
+        <h2>This is a Subsite for the original text</h2>
       </article>
     </section>
+
     <!-- ============= Möglicher Aufbau ============= -->
     <!-- Section Januar-->
     <section class="row col-12">
-      <h2>January 1994</h2>
-      <p>
-        The Röstigraben is the difference in voting behaviour between the German-speaking Swiss and the
-        French-speaking Romands, i.e. the German-speaking majority of the population and the francophone
-        population of Switzerland. Originally, this was a joking description of the "perceived" differences
-        between the two largest Swiss language regions.
-      </p>
-      <!-- Article 1-->
-      <article class="col-lg-6">
-        <h3>This is the heading 1</h3>
-        <p>
-          This is a text for article #1 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
-          duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-          clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        </p>
-      </article>
-      <!-- Article 2-->
-      <article class="col-lg-6">
-        <h3>This is the heading 1</h3>
-        <p>
-          This is a text for article #2 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
-          duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-          clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        </p>
+      <article class="col-12">
+        <p>Choose a month:</p>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" data-toggle="collapse" href="#January" role="button"
+                aria-expanded="false">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">6</a></li>
+            <li class="page-item"><a class="page-link" href="#">7</a></li>
+            <li class="page-item"><a class="page-link" href="#">8</a></li>
+            <li class="page-item"><a class="page-link" href="#">9</a></li>
+            <li class="page-item"><a class="page-link" href="#">10</a></li>
+            <li class="page-item"><a class="page-link" href="#">11</a></li>
+            <li class="page-item"><a class="page-link" href="#">12</a></li>
+          </ul>
+        </nav>
+        <div class="collapse" id="January">
+          <h2>January 1994</h2>
+          <p>
+            The Röstigraben is the difference in voting behaviour between the German-speaking Swiss and the
+            French-speaking Romands, i.e. the German-speaking majority of the population and the francophone
+            population of Switzerland. Originally, this was a joking description of the "perceived" differences
+            between the two largest Swiss language regions.
+          </p>
+          <p>
+            <button class="btn btn-primary" onclick="getJDG()"" type=" button" data-toggle="collapse"
+              data-target="#January_JDG" aria-expanded="false">
+              Journal de Genève
+            </button>
+            <button class="btn btn-primary" onclick="getGDL()" type="button" data-toggle="collapse"
+              data-target="#January_GDL" aria-expanded="false">
+              Gazette de Lausanne
+            </button>
+          </p>
+          <div class="collapse" id="January_JDG">
+            <p>
+              All papers of the Journal de Genève in january.
+            </p>
+            <p id="JDG_January"></p>
+          </div>
+          <div class="collapse" id="January_GDL">
+            <p>
+              All papers of the Gazette de Lausanne in january.
+            </p>
+            <p id="GDL_January"></p>
+          </div>
+        </div>
       </article>
     </section>
   </div>
@@ -163,6 +186,46 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
+
+  <script>
+    function getGDL() {
+      var path = "/data/swissOpenHackathon-letemps/text/GDL/1914/01/02/1.xml";
+      // Script fürs Laden von XML Files
+      var request = new XMLHttpRequest();
+      request.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          getArticle(this);
+        }
+      };
+      request.open("GET", path, true);
+      request.send();
+
+      function getArticle(xml) {
+        var xmlDoc = xml.responseXML;
+        document.getElementById("GDL_January").innerHTML =
+          xmlDoc.getElementsByTagName('entity')[0].childNodes[2].innerHTML;
+      }
+    }
+
+    function getJDG() {
+      var path = "/data/swissOpenHackathon-letemps/text/JDG/1914/01/01/1.xml";
+      // Script fürs Laden von XML Files
+      var request = new XMLHttpRequest();
+      request.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          getArticle(this);
+        }
+      };
+      request.open("GET", path, true);
+      request.send();
+
+      function getArticle(xml) {
+        var xmlDoc = xml.responseXML;
+        document.getElementById("JDG_January").innerHTML =
+          xmlDoc.getElementsByTagName('entity')[0].childNodes[2].innerHTML;
+      }
+    }
+  </script>
 </body>
 
 </html>

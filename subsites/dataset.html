@@ -37,13 +37,13 @@
       <!-- NavItems-->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto mr-5">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="/index.html">Home </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/subsites/original-text.html">Original text <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="/subsites/dataset.html">Dataset Overview <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item dropdown">
@@ -70,43 +70,57 @@
     <section class="row col-12">
       <h1>This is our Glamhack Project!</h1>
       <article class="col-12">
-        <h2>This is the Homepage</h2>
+        <h2>This is a Subsite for the dataset-overview</h2>
       </article>
     </section>
+    
     <!-- ============= Möglicher Aufbau ============= -->
-    <!-- Section Januar-->
-    <section class="row col-12">
-      <h2>January 1994</h2>
-      <p>
-        The Röstigraben is the difference in voting behaviour between the German-speaking Swiss and the
-        French-speaking Romands, i.e. the German-speaking majority of the population and the francophone
-        population of Switzerland. Originally, this was a joking description of the "perceived" differences
-        between the two largest Swiss language regions.
-      </p>
-      <!-- Article 1-->
-      <article class="col-lg-6">
-        <h3>This is the heading 1</h3>
-        <p>
-          This is a text for article #1 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
-          duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-          clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        </p>
-      </article>
-      <!-- Article 2-->
-      <article class="col-lg-6">
-        <h3>This is the heading 1</h3>
-        <p>
-          This is a text for article #2 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
-          duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-          clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        </p>
-      </article>
+    <section class="row">
+        <div class="col-md-12 col-md-offset-12">
+            <ul id="treeview">
+                <li data-expanded="true">Inbox
+                    <ul>
+                        <li>Today</li>
+                        <li>Monday</li>
+                        <li>Last Week</li>
+                    </ul>
+                </li>
+                <li>Trash
+                </li>
+                <li>Calendar
+                    <ul>
+                        <li>Day</li>
+                        <li>Week</li>
+                        <li>Month</li>
+                        <ul>
+                            <li>Day</li>
+                            <li>Week</li>
+                            <ul>
+                                <li>Day</li>
+                                <li>Week</li>
+                                <li>Month</li>
+                            </ul>
+                            <li>Month</li>
+                        </ul>
+                    </ul>
+                </li>
+                <li>Contacts
+                    <ul>
+                        <li>Alexander Stein</li>
+                        <li>John Doe</li>
+                        <li>Paul Smith</li>
+                        <li>Steward Lynn</li>
+                    </ul>
+                </li>
+                <li>Folders
+                    <ul>
+                        <li>Backup</li>
+                        <li>Deleted</li>
+                        <li>Projects</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </section>
   </div>
 
