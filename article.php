@@ -8,7 +8,6 @@ require_once('config/data.php');
 if(isset($_GET['id'])){
     $article_id = $_GET['id'];
     echo $article_id;
-    $article = get_article_by_id($article_id);
 } else{
     echo "The content could not have been load";
 }
@@ -21,9 +20,11 @@ if(isset($_GET['id'])){
 
 <!-- ==== CONTENT ==== -->
 <div class="container mt-3">
-    <h1><?php $article['title'] ?></h1>
+    <?php $characteristics = get_article_by_id($article_id); ?>
+    <?php foreach ($articles as $article) { ?>
+    <h1><?php $characteristics['title'] ?></h1>
 
-
+    <?php } ?>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
