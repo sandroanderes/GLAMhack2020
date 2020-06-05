@@ -3,12 +3,25 @@
 // Datenbankverbindung
 // Verbindung herstellen
 
+$host_name = "localhost";
+$database = "GLAMhack2020"; // Change your database name
+$username = "root";          // Your database user id 
+$password = "password";          // Your password
 
-$pdo = new PDO('mysql:host=localhost;dbname=GLAMhack2020', 'root', 'password');
+
+try {
+    $pdo = new PDO('mysql:host='.$host_name.';dbname='.$database, $username, $password);
+    } catch (PDOException $e) {
+    print "Error!: " . $e->getMessage() . "<br/>";
+    die();
+    }
  
 $statement = $pdo->prepare("SELECT * FROM articles");
  
-if($statement->execute()) { 
+if($statement->execute()) {
+    while($row = $statement->fetch()) {
+        echo $row['title']."<br />";
+    } 
 } else {
     echo "SQL Error <br />";
     echo $statement->queryString."<br />";
