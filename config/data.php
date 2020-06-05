@@ -28,7 +28,7 @@ function get_db_connection()
 function get_all_articles()
 {
     $db = get_db_connection();
-    $sql = "SELECT * FROM articles-1914";
+    $sql = "SELECT * FROM articles";
     $result = $db->query($sql);
     return $result->fetchAll();
 }
@@ -37,7 +37,7 @@ function get_all_articles()
 function get_article_by_id($id)
 {
     $db = get_db_connection();
-    $sql = "SELECT * FROM 'articles-1914' WHERE id = $id;";
+    $sql = "SELECT * FROM articles WHERE id = $id;";
     $result = $db->query($sql);
     return $result->fetch();
 }
@@ -46,7 +46,7 @@ function get_article_by_id($id)
 function get_teaser_articles()
 {
     $db = get_db_connection();
-    $sql = "SELECT id, title, title_f, teaser, teaser_f, date, img_url, newspaper_name FROM 'articles-1914'";
+    $sql = "SELECT id, title, title_f, teaser, teaser_f, date, img_url, newspaper_name FROM articles";
     $result = $db->query($sql);
     return $result->fetch();
 }
