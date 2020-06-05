@@ -26,7 +26,7 @@ function get_teas_articles()
 }
 
 // SELECT Artikel by ID
-function get_article_by_id($id)
+function get_article_by_id()
 {
     $pdo = get_db_connection();
 
