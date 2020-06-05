@@ -19,7 +19,7 @@ function get_all_articles()
     $pdo = get_db_connection();
     $statement = $pdo->prepare("SELECT * FROM articles");
     $statement->execute();
-    $articles = $statement;
+    return $row = $statement;
 
     /*
     if ($statement->execute()) {
