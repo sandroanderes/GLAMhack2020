@@ -14,12 +14,12 @@ function get_db_connection()
     return $pdo;
 }
 
-// SELECT alle Artikel
-function get_all_articles()
+// SELECT Teaser Artikel
+function get_teas_articles()
 {
     $pdo = get_db_connection();
 
-    $statement = $pdo->prepare("SELECT teaser, img_url, date, newspaper_name FROM articles");
+    $statement = $pdo->prepare("SELECT title, teaser, img_url, date, newspaper_name FROM articles");
     $statement->execute();
     $result = $statement->fetchAll();
     return $result;
