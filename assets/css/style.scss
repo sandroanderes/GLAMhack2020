@@ -1,47 +1,55 @@
 $primary: rgb(112, 67, 51);
 $dark-primary: #303F9F;
-$light-primary: #C5CAE9;
-$background-color: rgb(250, 211, 176);
-$text: #FFFFFF;
-$primary-text: #212121;
-$secondary-text: #757575;
-$accent: #037F8C;
+$light-primary: #663e32;
+$background-color: #e6e6e6;
+$text: #fff;
+$primary-text: #000;
+$secondary-text: #c9c9c9;
+$accent: #663e32;
 
 section {
-  padding: 100px 0;
+	padding: 100px 0;
 }
 
-html, body {
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+html,
+body {
+	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Roboto';
-  font-size: 17px;
-  font-weight: 400;
-  background-color: $background-color;
+	font-family: 'Roboto';
+	font-size: 17px;
+	font-weight: 400;
+	background-color: $background-color;
 }
 
 h1 {
-  font-size: 200%;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 400;
+	font-family: 'Tenali Ramakrishna', sans-serif;
+	font-size: 90px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 400;
+	line-height: 100px;
 }
 
 header {
-	background: $primary;
+	background-image: url("../img/jdg.jpg");
+	background-color: $primary;
 	color: $text;
 	padding: 150px 0;
 
 	p {
-		font-family: 'Allura';
-		color: rgba(255, 255, 255, .2);
+		color: $text;
 		margin-bottom: 0;
-		font-size: 60px;
+		font-size: 30px;
 		margin-top: -30px;
+		line-height: 60px;
 
+	}
+	.text-center{
+		background-color: rgba(0, 0, 0, .9);
+		padding:50px 30px;
 	}
 }
 
@@ -52,6 +60,7 @@ header {
 	&::before {
 		content: '';
 		background: $light-primary;
+		top: 0;
 		width: 5px;
 		height: 95%;
 		position: absolute;
@@ -59,7 +68,7 @@ header {
 		transform: translateX(-50%);
 	}
 
-	a {
+	/* a {
 		background: $primary;
 		color: $text;
 		padding: 8px 20px;
@@ -70,14 +79,16 @@ header {
 		display: inline-block;
 		border-radius: 2px;
 		box-shadow: 0 1px 3px -1px rgba(0, 0, 0, .6);
-	
-		&:hover, &:active, &:focus {
+
+		&:hover,
+		&:active,
+		&:focus {
 			background: darken($primary, 10%);
 			color: $text;
 			text-decoration: none;
 		}
-	
-	}
+
+	} */
 }
 
 .timeline-item {
@@ -101,7 +112,7 @@ header {
 				border-style: solid;
 				width: 0;
 				height: 0;
-				top: 30px;
+				top: 70px;
 				left: -15px;
 				border-width: 10px 15px 10px 0;
 				border-color: transparent #f5f5f5 transparent transparent;
@@ -131,7 +142,7 @@ header {
 		border-style: solid;
 		width: 0;
 		height: 0;
-		top: 30px;
+		top: 70px;
 		right: -15px;
 		border-width: 10px 0 10px 15px;
 		border-color: transparent transparent transparent #f5f5f5;
@@ -145,15 +156,17 @@ header {
 	border-radius: 50%;
 	position: absolute;
 	left: 50%;
-	margin-top: 25px;
+	margin-top: 65px;
 	margin-left: -15px;
 }
 
 .timeline-card {
-	padding: 0!important;
+	padding: 0 !important;
 
 	p {
 		padding: 0 20px;
+		padding-bottom: 16px;
+		margin-bottom:0;
 	}
 
 	a {
@@ -162,10 +175,11 @@ header {
 }
 
 .timeline-item {
-  .timeline-img-header {
-			background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)), url('https://picsum.photos/1000/800/?random') center center no-repeat;
-			background-size: cover;
-		}
+	cursor: pointer;
+	.timeline-img-header {
+		background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .4)), url('https://picsum.photos/1000/800/?random') center center no-repeat;
+		background-size: cover;
+	}
 }
 
 .timeline-img-header {
@@ -184,16 +198,17 @@ header {
 
 blockquote {
 	margin-top: 30px;
-	color: $secondary-text;
+	color: $primary-text;
 	border-left-color: $primary;
 	padding: 0 20px;
 }
 
 .date {
+	font-size:14px;
 	background: $accent;
 	display: inline-block;
 	color: $text;
-	padding: 10px;
+	padding: 5px 10px;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -202,32 +217,33 @@ blockquote {
 nav.bg-white {
 	background-color: $background-color !important;
 }
-nav.navbar{
+
+nav.navbar {
 	padding: 40px 0 !important;
 }
 
 /* Scroll to Top */
 #myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: #f4511e;
-    opacity: 0.6;
-    transition: 0.3s;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 18px;
-  }
-  
-  #myBtn:hover {
-    opacity: 1;
-  }
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: #f4511e;
+	opacity: 0.6;
+	transition: 0.3s;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 10px;
+	font-size: 18px;
+}
+
+#myBtn:hover {
+	opacity: 1;
+}
 
 @media screen and (max-width: 768px) {
 
@@ -260,14 +276,14 @@ nav.navbar{
 			&:nth-child(odd) {
 
 				.timeline-content {
-					
+
 					&::after {
 						content: '';
 						position: absolute;
 						border-style: solid;
 						width: 0;
 						height: 0;
-						top: 30px;
+						top: 70px;
 						left: -15px;
 						border-width: 10px 15px 10px 0;
 						border-color: transparent #f5f5f5 transparent transparent;
@@ -277,6 +293,5 @@ nav.navbar{
 			}
 		}
 	}
-	
-}
 
+}

@@ -1,7 +1,8 @@
 section {
   padding: 100px 0; }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
   scroll-behavior: smooth; }
 
@@ -9,50 +10,63 @@ body {
   font-family: 'Roboto';
   font-size: 17px;
   font-weight: 400;
-  background-color: #fad3b0; }
+  background-color: #e6e6e6; }
 
 h1 {
-  font-size: 200%;
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  font-size: 90px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-weight: 400; }
+  font-weight: 400;
+  line-height: 100px; }
 
 header {
-  background: #704333;
-  color: #FFFFFF;
+  background-image: url("../img/jdg.jpg");
+  background-color: #704333;
+  color: #fff;
   padding: 150px 0; }
   header p {
-    font-family: 'Allura';
-    color: rgba(255, 255, 255, 0.2);
+    color: #fff;
     margin-bottom: 0;
-    font-size: 60px;
-    margin-top: -30px; }
+    font-size: 30px;
+    margin-top: -30px;
+    line-height: 60px; }
+  header .text-center {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 50px 30px; }
 
 .timeline {
-  position: relative; }
+  position: relative;
+  /* a {
+		background: $primary;
+		color: $text;
+		padding: 8px 20px;
+		text-transform: uppercase;
+		font-size: 14px;
+		margin-bottom: 20px;
+		margin-top: 10px;
+		display: inline-block;
+		border-radius: 2px;
+		box-shadow: 0 1px 3px -1px rgba(0, 0, 0, .6);
+
+		&:hover,
+		&:active,
+		&:focus {
+			background: darken($primary, 10%);
+			color: $text;
+			text-decoration: none;
+		}
+
+	} */ }
   .timeline::before {
     content: '';
-    background: #C5CAE9;
+    background: #663e32;
+    top: 0;
     width: 5px;
     height: 95%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%); }
-  .timeline a {
-    background: #704333;
-    color: #FFFFFF;
-    padding: 8px 20px;
-    text-transform: uppercase;
-    font-size: 14px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    display: inline-block;
-    border-radius: 2px;
-    box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.6); }
-    .timeline a:hover, .timeline a:active, .timeline a:focus {
-      background: #4d2e23;
-      color: #FFFFFF;
-      text-decoration: none; }
 
 .timeline-item {
   width: 100%;
@@ -69,7 +83,7 @@ header {
       border-style: solid;
       width: 0;
       height: 0;
-      top: 30px;
+      top: 70px;
       left: -15px;
       border-width: 10px 15px 10px 0;
       border-color: transparent #f5f5f5 transparent transparent; }
@@ -91,7 +105,7 @@ header {
     border-style: solid;
     width: 0;
     height: 0;
-    top: 30px;
+    top: 70px;
     right: -15px;
     border-width: 10px 0 10px 15px;
     border-color: transparent transparent transparent #f5f5f5; }
@@ -103,47 +117,52 @@ header {
   border-radius: 50%;
   position: absolute;
   left: 50%;
-  margin-top: 25px;
+  margin-top: 65px;
   margin-left: -15px; }
 
 .timeline-card {
   padding: 0 !important; }
   .timeline-card p {
-    padding: 0 20px; }
+    padding: 0 20px;
+    padding-bottom: 16px;
+    margin-bottom: 0; }
   .timeline-card a {
     margin-left: 20px; }
 
-.timeline-item .timeline-img-header {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://picsum.photos/1000/800/?random") center center no-repeat;
-  background-size: cover; }
+.timeline-item {
+  cursor: pointer; }
+  .timeline-item .timeline-img-header {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://picsum.photos/1000/800/?random") center center no-repeat;
+    background-size: cover; }
 
 .timeline-img-header {
   height: 200px;
   position: relative;
   margin-bottom: 20px; }
   .timeline-img-header h2 {
-    color: #FFFFFF;
+    color: #fff;
     position: absolute;
     bottom: 5px;
     left: 20px; }
 
 blockquote {
   margin-top: 30px;
-  color: #757575;
+  color: #000;
   border-left-color: #704333;
   padding: 0 20px; }
 
 .date {
-  background: #037F8C;
+  font-size: 14px;
+  background: #663e32;
   display: inline-block;
-  color: #FFFFFF;
-  padding: 10px;
+  color: #fff;
+  padding: 5px 10px;
   position: absolute;
   top: 0;
   right: 0; }
 
 nav.bg-white {
-  background-color: #fad3b0 !important; }
+  background-color: #e6e6e6 !important; }
 
 nav.navbar {
   padding: 40px 0 !important; }
@@ -186,7 +205,7 @@ nav.navbar {
     border-style: solid;
     width: 0;
     height: 0;
-    top: 30px;
+    top: 70px;
     left: -15px;
     border-width: 10px 15px 10px 0;
     border-color: transparent #f5f5f5 transparent transparent; } }
