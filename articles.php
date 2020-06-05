@@ -19,17 +19,25 @@ require_once('config/data.php');
     <!-- Place content here -->
 
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+      <?php 
+          $articles = get_teaser_articles();
+          foreach ($articles as $article) {
+      ?>
         <div class="col mb-4">
           <div class="card">
-            <img src="assets/img/demo.jpg" class="card-img-top" alt="...">
+            <img src="<?php echo $article['img_url']; ?>" class="card-img-top">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="teaser" class="card-text">Das ist ein Teasertext - er soll nicht zu lang sein. Ein bis zwei Sätze genügen.</p>
+              <h5 class="card-title"><?php echo $article['title']; ?></h5>
+              <p class="teaser" class="card-text"><?php echo $article['teaser']; ?></p>
             </div>
-            <button>Read</button>
+            <button class="btn">Read more</button>
           </div>
         </div>
-        <div class="col mb-4">
+
+        <?php 
+          }
+        ?>
+        <!--<div class="col mb-4">
           <div class="card">
             <img src="assets/img/demo.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -98,7 +106,7 @@ require_once('config/data.php');
             </div>
             <button>Read</button>
           </div>
-        </div>
+        </div>-->
       </div>
 
     <!-- Optional JavaScript -->
