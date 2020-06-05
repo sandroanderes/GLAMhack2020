@@ -17,12 +17,12 @@ function get_db_connection()
 function get_all_articles()
 {
     $pdo = get_db_connection();
+    $result = $pdo->query("SELECT * FROM articles");
+    /*
     $statement = $pdo->prepare("SELECT * FROM articles");
     $statement->execute();
     $result = $statement;
-    echo $result;
     return $result;
-/*
     if ($statement->execute()) {
         while ($row = $statement->fetch()) {
             echo $row['title'] . "<br />";
