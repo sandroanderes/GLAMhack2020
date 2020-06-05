@@ -1,5 +1,4 @@
 <?php
-/*
 $servername = "localhost:3306";
 $username = "hacker20";
 $password = "Welcome1";
@@ -12,11 +11,6 @@ if (!$conn) {
   die("Verbindung fehlgeschlagen: " . mysqli_connect_error());
 }
 echo "Verbindung erfolgreich";
-*/
+return $conn;
 
-$base_url = "https://glamhack2020.sandroanderes.ch/";
-
-$db_host = "localhost:3306";
-$db_user = "hacker20";
-$db_pass = "Welcome1";
-$db_charset = "utf8mp4";
+?>

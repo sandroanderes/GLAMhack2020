@@ -1,6 +1,7 @@
 <?php
 
 // Datenbankverbindung
+/*
 function get_db_connection()
 {
 
@@ -29,6 +30,7 @@ function get_db_connection()
     // $db gespeicherte Datenbankverbindung zurückgeben
     return $db;
 }
+*/
 
 // SELECT everything
 function get_all_articles()
