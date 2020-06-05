@@ -26,11 +26,11 @@ function get_teas_articles()
 }
 
 // SELECT Artikel by ID
-function get_article_by_id()
+function get_article_by_id($id)
 {
     $pdo = get_db_connection();
 
-    $statement = $pdo->prepare("SELECT * FROM articles WHERE id = 1");
+    $statement = $pdo->prepare("SELECT * FROM articles WHERE id = $id");
     $statement->execute();
     $result = $statement->fetch();
     return $result;

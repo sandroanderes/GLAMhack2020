@@ -17,7 +17,7 @@ echo $article_id;
 
 <!-- ==== CONTENT ==== -->
 <div class="container mt-3">
-    <?php $param = get_article_by_id(); ?>
+    <?php $param = get_article_by_id($_GET['id']); ?>
     <h1><?php echo $param['title'] ?></h1>
 
 
