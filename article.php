@@ -21,7 +21,7 @@ if(isset($_GET['id'])){
 <!-- ==== CONTENT ==== -->
 <div class="container mt-3">
     <?php $characteristics = get_article_by_id($article_id); ?>
-    <?php foreach ($characteristic as $characteristics) { ?>
+    <?php foreach ($characteristics as $characteristic) { ?>
     <h1><?php $characteristic['title'] ?></h1>
 
     <?php } ?>
