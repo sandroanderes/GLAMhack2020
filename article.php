@@ -7,6 +7,7 @@ require_once('config/data.php');
 
 if(isset($_GET['id'])){
     $article_id = $_GET['id'];
+    echo $article_id;
 } else{
     echo "The content could not have been load";
 }
