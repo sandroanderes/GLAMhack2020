@@ -1,7 +1,7 @@
-# GLAMhack2020
+# GLAMhack 2020
  6th Swiss Open Cultural Data Hackathon
 
-## About GLAMhack2020
+## About GLAMhack 2020
 The 2020 Edition of the **Swiss Open Cultural Data Hackathon** will take place on 5-6 June as an ONLINE hackathon. This edition is virtually hosted by the Swiss Institute for Information Science at the FHGR Chur, in collaboration with the Institute for Multimedia Production. The focus of the **GLAMhack** will lie on Linked Open Data, Machine Learning, Human-Computer-Interaction and Crowdsourcing. Once again, we are happy to collaborate with Wikimedia CH, infoclio.ch and other members of the Friends of OpenGLAM Network.
 
 Source: https://opendata.swiss/de/dataset/journal-de-geneve-gazette-de-lausanne-1914
