@@ -28,7 +28,7 @@ function get_db_connection()
 function get_all_articles()
 {
     $db = get_db_connection();
-    $sql = "SELECT * FROM articles-1914";
+    $sql = "SELECT * FROM `articles-1914`";
     $result = $db->query($sql);
     return $result->fetchAll();
 }
