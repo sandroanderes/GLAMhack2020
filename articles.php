@@ -17,11 +17,6 @@ require_once('config/data.php');
     <!-- Place content here -->
 
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-      <?php 
-      $articles = get_all_articles();
-        foreach ($articles as $article) {
-          
-      ?>
         <div class="col mb-4">
           <div class="card">
             <img src="<?php echo $article['img_url']; ?>" class="card-img-top">

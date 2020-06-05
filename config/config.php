@@ -2,9 +2,9 @@
 
 $base_url = "https://glamhack2020.sandroanderes.ch/";
 
-$db_host = "localhost:3306";
-$db_user = "hacker20";
+$db_host = "localhost";
+$db_user = "root";
 $db_name = "GLAMhack2020";
-$db_pass = "Welcome1";
+$db_pass = "password";
 $db_charset = "utf8mp4";
 ?>

@@ -22,6 +22,7 @@ h1 {
 
 header {
   background-image: url("../img/jdg.jpg");
+  object-fit: cover;
   background-color: #704333;
   color: #fff;
   padding: 150px 0; }

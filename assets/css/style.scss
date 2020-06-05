@@ -35,6 +35,7 @@ h1 {
 
 header {
 	background-image: url("../img/jdg.jpg");
+	object-fit: cover;
 	background-color: $primary;
 	color: $text;
 	padding: 150px 0;

@@ -2,29 +2,22 @@
 
 // Datenbankverbindung
 // Verbindung herstellen
-function get_db_connection()
-{
-    global $db_host, $db_name, $db_user, $db_pass, $db_charset;
 
-    $dsn = "mysql:host=$db_host;dbname=$db_name;charset=$db_charset";
-    $options = [
-        PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
-        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-        PDO::ATTR_EMULATE_PREPARES   => false
-    ];
 
-    try {
-        $db = new PDO($dsn, $db_user, $db_pass, $options);
-    } catch (\PDOException $e) {
-        throw new \PDOException($e->getMessage(), (int) $e->getCode());
-    }
-
-    // $db gespeicherte Datenbankverbindung zurückgeben
-    return $db;
+$pdo = new PDO('mysql:host=localhost;dbname=GLAMhack2020', 'root', 'password');
+ 
+$statement = $pdo->prepare("SELECT * FROM articles");
+ 
+if($statement->execute()) { 
+} else {
+    echo "SQL Error <br />";
+    echo $statement->queryString."<br />";
+    echo $statement->errorInfo()[2];
 }
 
 
-// SELECT everything
+
+/* // SELECT everything
 function get_all_articles()
 {
     $db = get_db_connection();
@@ -49,4 +42,4 @@ function get_teaser_articles()
     $sql = "SELECT id, title, title_f, teaser, teaser_f, date, img_url, newspaper_name FROM articles";
     $result = $db->query($sql);
     return $result->fetch();
-}
+} */
