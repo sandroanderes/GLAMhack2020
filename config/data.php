@@ -30,8 +30,8 @@ function get_article_by_id($id)
 {
     $pdo = get_db_connection();
 
-    $statement = $pdo->prepare("SELECT * FROM articles WHERE id = $id");
-    $statement->execute();
-    $result = $statement->fetchAll();
+    $statement = $pdo->prepare("SELECT * FROM articles WHERE id = ?");
+    $statement->execute(array($id));
+    $result = $statement->fetch();
     return $result;
 }

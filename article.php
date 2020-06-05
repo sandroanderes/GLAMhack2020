@@ -5,7 +5,9 @@ require_once('config/config.php');
 // Alle DB-Abfragen
 require_once('config/data.php');
 
-echo $_GET['id'];
+
+$article_id = $_GET['id'];
+echo $article_id;
 
 ?>
 
@@ -15,11 +17,10 @@ echo $_GET['id'];
 
 <!-- ==== CONTENT ==== -->
 <div class="container mt-3">
-    <?php $params = get_article_by_id($_GET['id']); ?>
-    <?php foreach ($params as $param) { ?>
+    <?php $param = get_article_by_id($article_id); ?>
     <h1><?php $param['title'] ?></h1>
 
-    <?php } ?>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
