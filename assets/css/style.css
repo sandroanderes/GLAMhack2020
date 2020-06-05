@@ -11,7 +11,9 @@ html {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: red;
+    background-color: #f4511e;
+    opacity: 0.6;
+    transition: 0.3s;
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -20,5 +22,5 @@ html {
   }
   
   #myBtn:hover {
-    background-color: #555;
+    opacity: 1;
   }
