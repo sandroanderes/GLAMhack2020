@@ -19,8 +19,9 @@ require_once('config/data.php');
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
       <?php 
         $articles = get_teaser_articles();
+        var_dump($articles);
         foreach ($articles as $article) {
-          var_dump($article);
+          
       ?>
         <div class="col mb-4">
           <div class="card">
