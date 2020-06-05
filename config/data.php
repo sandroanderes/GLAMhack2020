@@ -59,12 +59,12 @@ function get_all_articles()
     $conn = new mysqli($servername, $username, $password, $dbname);
 
     // Verbindung prüfen
-    if ($conn->connect_error) {
-        die("Verbindung fehlgeschlagen: " . $conn->connect_error);
-    }
-    echo "Verbindung erfolgreich";
+    if (!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
+      }
+      echo "Connected successfully";
 
-    $sql = "SELECT * FROM articles-1914";
+    $sql = "SELECT * FROM 'articles-1914'";
     $result = $conn->query($sql);
 }
 
