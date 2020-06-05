@@ -1,9 +1,9 @@
 <!-- ===== Controller ===== -->
 <?php 
 // Alle Site-relevanten Werte
-require_once('./config/config.php');
+require_once('config/config.php');
 // Alle DB-Abfragen
-require_once('./config/data.php');
+require_once('config/data.php');
 
 ?>
 
@@ -20,6 +20,7 @@ require_once('./config/data.php');
       <?php 
         $articles = get_all_articles();
         foreach ($articles as $article) {
+          echo $article;
       ?>
         <div class="col mb-4">
           <div class="card">
