@@ -18,7 +18,9 @@ require_once('config/data.php');
 
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
       <?php 
-        $articles = get_teaser_articles();
+        var_dump(get_teaser_articles());
+        print(get_teaser_articles());
+        echo get_teaser_articles();
         var_dump($articles);
         foreach ($articles as $article) {
           
