@@ -49,7 +49,7 @@ function get_db_connection()
 function get_all_articles()
 {
     $conn = get_db_connection();
-    $sql = "SELECT * FROM 'articles-1914'";
+    $sql = "SELECT * FROM articles-1914";
     $result = $conn->query($sql);
     /*$db = get_db_connection();
     $sql = "SELECT * FROM 'articles-1914'";
