@@ -4,6 +4,13 @@
 function get_db_connection()
 {
 
+    $base_url = "https://glamhack2020.sandroanderes.ch/";
+
+    $db_host = "localhost:3306";
+    $db_user = "hacker20";
+    $db_pass = "Welcome1";
+    $db_charset = "utf8mp4";
+
     global $db_host, $db_name, $db_user, $db_pass, $db_charset;
 
     $dsn = "mysql:host=$db_host;dbname=$db_name;charset=$db_charset";
@@ -49,4 +56,3 @@ function get_teaser_articles()
     $result = $db->query($sql);
     return $result->fetch();
 }
-
