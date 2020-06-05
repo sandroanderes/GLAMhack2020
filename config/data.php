@@ -2,11 +2,6 @@
 
 // Datenbankverbindung
 // Verbindung herstellen
-
-require "config.php";
-
-
-
 function get_db_connection()
 {
     global $host_name, $database, $username, $password;
