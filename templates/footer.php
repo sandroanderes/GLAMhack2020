@@ -4,5 +4,15 @@
     <script src="assets/js/script.js"></script>
     <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
 </body>
+    <!-- Footer -->
+    <footer class="page-footer font-small blue">
 
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+        <p>Glamhackers Coffe <code>‹br›</code></p>
+    </div>
+    <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
 </html>
