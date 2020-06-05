@@ -15,20 +15,22 @@ require_once('config/data.php');
 <div class="container mt-3">
     <h1>Articles</h1>
     <!-- Place content here -->
-<?php 
-get_all_articles();
-?>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+    <?php 
+      get_all_articles();
+      foreach ($article as $articles){
+    ?>
         <div class="col mb-4">
           <div class="card">
-            <img src="<?php echo $row['img_url']; ?>" class="card-img-top">
+            <img src="<?php echo $article['img_url']; ?>" class="card-img-top">
             <div class="card-body">
-              <h5 class="card-title"><?php echo $row['title']; ?></h5>
-              <p class="teaser" class="card-text"><?php echo $row['teaser']; ?></p>
+              <h5 class="card-title"><?php echo $article['title']; ?></h5>
+              <p class="teaser" class="card-text"><?php echo $article['teaser']; ?></p>
             </div>
             <button class="btn">Read more</button>
           </div>
         </div>
+      <?php } ?>
         
         <!--<div class="col mb-4">
           <div class="card">
