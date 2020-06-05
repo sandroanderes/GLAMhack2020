@@ -34,6 +34,19 @@ require_once('config/data.php');
           <button class="btn">Read more</button>
         </div>
       </div>
+
+      <div class="timeline-item">
+        <div class="timeline-img">
+          
+        </div>
+        <div class="timeline-content timeline-card js--fadeInRight">
+          <div class="timeline-img-header">
+            <h2><?php echo $article['title']; ?></h2>
+          </div>
+          <div class="date"><?php echo $article['date']; ?></div>
+          <p><?php echo $article['teaser']; ?></p>
+        </div>
+      </div>
     <?php } ?>
   </div>
 
