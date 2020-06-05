@@ -13,7 +13,12 @@ require_once('config/data.php');
 <?php require_once('templates/header.php'); ?>
 
 <!-- ==== CONTENT ==== -->
-    <h1>About</h1>
+<!-- ==== CONTENT ==== -->
+<div class="container mt-3">
+    <h1>Articles</h1>
+    <!-- Place content here -->
+
+</div>
 
 <!-- == FOOTER == -->
 <?php require_once('templates/footer.php'); ?>
