@@ -1,5 +1,5 @@
 <!-- ===== Controller ===== -->
-<?php 
+<?php
 
 // Alle Site-relevanten Werte
 require_once('config/config.php');
@@ -13,7 +13,11 @@ require_once('config/data.php');
 <?php require_once('templates/header.php'); ?>
 
 <!-- ==== CONTENT ==== -->
+<div class="container mt-3">
     <h1>Home</h1>
+    <!-- Place content here -->
+</div>
+
 
 <!-- == FOOTER == -->
 <?php require_once('templates/footer.php'); ?>
