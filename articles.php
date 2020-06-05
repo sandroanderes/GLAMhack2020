@@ -19,7 +19,6 @@ $articles = get_all_articles();
 
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
       <?php 
-          echo $articles;
           foreach ($articles as $article) {
       ?>
         <div class="col mb-4">
