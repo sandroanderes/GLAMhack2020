@@ -5,6 +5,12 @@ require_once('config/config.php');
 // Alle DB-Abfragen
 require_once('config/data.php');
 
+if(isset($_GET['id'])){
+    $article_id = $_GET['id'];
+} else{
+    echo "The content could not have been load";
+}
+
 ?>
 
 <!-- ===== Start View ===== -->
