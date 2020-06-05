@@ -5,12 +5,7 @@ require_once('config/config.php');
 // Alle DB-Abfragen
 require_once('config/data.php');
 
-if(isset($_GET['id'])){
-    $article_id = $_GET['id'];
-    echo $article_id;
-} else{
-    echo "The content could not have been load";
-}
+echo $_GET['id'];
 
 ?>
 
@@ -20,9 +15,9 @@ if(isset($_GET['id'])){
 
 <!-- ==== CONTENT ==== -->
 <div class="container mt-3">
-    <?php $characteristics = get_article_by_id($article_id); ?>
-    <?php foreach ($characteristics as $characteristic) { ?>
-    <h1><?php $characteristic['title'] ?></h1>
+    <?php $params = get_article_by_id($_GET['id']); ?>
+    <?php foreach ($params as $param) { ?>
+    <h1><?php $param['title'] ?></h1>
 
     <?php } ?>
     <!-- Optional JavaScript -->
