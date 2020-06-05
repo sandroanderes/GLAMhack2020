@@ -29,7 +29,7 @@ require_once('config/data.php');
             <h6 class="card-subtitle mb-2 text-muted"><?php echo $article['newspaper_name']?> - <?php echo $article['date']?> </h6>
             <p class="teaser" class="card-text"><?php echo $article['teaser']; ?></p>
           </div>
-          <button class="btn btn-primary"><a href="article.php"> Read more </a></button>
+          <a class="btn btn-primary" href="article.php"> Read more </a>
         </div>
       </div>
     <?php } ?>
