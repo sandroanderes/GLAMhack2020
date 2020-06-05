@@ -21,7 +21,7 @@ require_once('config/data.php');
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
         <div class="col mb-4">
           <div class="card">
-            <img src="assets/img//circle-game-ring-100-resimage_v-variantSmall16x9_w-1024.png" class="card-img-top" alt="...">
+            <img src="assets/img/demo.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="teaser" class="card-text">Das ist ein Teasertext - er soll nicht zu lang sein. Ein bis zwei Sätze genügen.</p>
@@ -31,7 +31,7 @@ require_once('config/data.php');
         </div>
         <div class="col mb-4">
           <div class="card">
-            <img src="assets/img//circle-game-ring-100-resimage_v-variantSmall16x9_w-1024.png" class="card-img-top" alt="...">
+            <img src="assets/img/demo.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="teaser" class="card-text">Das ist ein Teasertext - er soll nicht zu lang sein. Ein bis zwei Sätze genügen.</p>
@@ -41,7 +41,7 @@ require_once('config/data.php');
         </div>       
         <div class="col mb-4">
           <div class="card">
-            <img src="assets/img//circle-game-ring-100-resimage_v-variantSmall16x9_w-1024.png" class="card-img-top" alt="...">
+            <img src="assets/img/demo.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="teaser" class="card-text">Das ist ein Teasertext - er soll nicht zu lang sein. Ein bis zwei Sätze genügen.</p>
@@ -51,7 +51,7 @@ require_once('config/data.php');
         </div>       
         <div class="col mb-4">
           <div class="card">
-            <img src="assets/img//circle-game-ring-100-resimage_v-variantSmall16x9_w-1024.png" class="card-img-top" alt="...">
+            <img src="assets/img/demo.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="teaser" class="card-text">Das ist ein Teasertext - er soll nicht zu lang sein. Ein bis zwei Sätze genügen.</p>
@@ -61,7 +61,7 @@ require_once('config/data.php');
         </div>       
         <div class="col mb-4">
           <div class="card">
-            <img src="assets/img//circle-game-ring-100-resimage_v-variantSmall16x9_w-1024.png" class="card-img-top" alt="...">
+            <img src="assets/img/demo.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="teaser" class="card-text">Das ist ein Teasertext - er soll nicht zu lang sein. Ein bis zwei Sätze genügen.</p>
@@ -71,7 +71,7 @@ require_once('config/data.php');
         </div>       
         <div class="col mb-4">
           <div class="card">
-            <img src="assets/img//circle-game-ring-100-resimage_v-variantSmall16x9_w-1024.png" class="card-img-top" alt="...">
+            <img src="assets/img/demo.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="teaser" class="card-text">Das ist ein Teasertext - er soll nicht zu lang sein. Ein bis zwei Sätze genügen.</p>
@@ -81,7 +81,7 @@ require_once('config/data.php');
         </div>       
         <div class="col mb-4">
           <div class="card">
-            <img src="assets/img//circle-game-ring-100-resimage_v-variantSmall16x9_w-1024.png" class="card-img-top" alt="...">
+            <img src="assets/img/demo.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="teaser" class="card-text">Das ist ein Teasertext - er soll nicht zu lang sein. Ein bis zwei Sätze genügen.</p>
@@ -91,7 +91,7 @@ require_once('config/data.php');
         </div>       
         <div class="col mb-4">
           <div class="card">
-            <img src="assets/img//circle-game-ring-100-resimage_v-variantSmall16x9_w-1024.png" class="card-img-top" alt="...">
+            <img src="assets/img/demo.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="teaser" class="card-text">Das ist ein Teasertext - er soll nicht zu lang sein. Ein bis zwei Sätze genügen.</p>
