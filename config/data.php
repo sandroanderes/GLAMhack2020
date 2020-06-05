@@ -18,6 +18,7 @@ function get_all_articles()
 {
     $pdo = get_db_connection();
     $result = $pdo->query("SELECT * FROM articles");
+    return $result->fetchAll();
     /*
     $statement = $pdo->prepare("SELECT * FROM articles");
     $statement->execute();
