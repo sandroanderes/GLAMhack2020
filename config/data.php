@@ -18,10 +18,10 @@ function get_all_articles()
 {
     $pdo = get_db_connection();
     $statement = $pdo->prepare("SELECT * FROM articles");
-    $articles = $statement->execute();
-    return $articles;
-
-    /*
+    $statement->execute();
+    $result = $statement;
+    return $result;
+/*
     if ($statement->execute()) {
         while ($row = $statement->fetch()) {
             echo $row['title'] . "<br />";
@@ -31,7 +31,7 @@ function get_all_articles()
         echo $statement->queryString . "<br />";
         echo $statement->errorInfo()[2];
     }
-    */
+*/
 }
 
 
