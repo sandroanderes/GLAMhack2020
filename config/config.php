@@ -1,10 +1,14 @@
 <?php
+$host_name = "localhost";
+$database = "GLAMhack2020"; // Change your database name
+$username = "root";          // Your database user id 
+$password = "password";          // Your password
 
-$base_url = "https://glamhack2020.sandroanderes.ch/";
-
-$db_host = "localhost";
-$db_user = "root";
-$db_name = "GLAMhack2020";
-$db_pass = "password";
-$db_charset = "utf8mp4";
+//////// Do not Edit below /////////
+try {
+$pdo = new PDO('mysql:host='.$host_name.';dbname='.$database, $username, $password);
+} catch (PDOException $e) {
+print "Error!: " . $e->getMessage() . "<br/>";
+die();
+}
 ?>
