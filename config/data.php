@@ -20,6 +20,8 @@ function get_all_articles()
 
     $statement = $pdo->prepare("SELECT * FROM articles");
     $statement->execute();
+    $result = $statement->fetch();
+    echo $result;
     if ($statement->execute()) {
         while ($row = $statement->fetch()) {
             echo $row['title'] . "<br />";
