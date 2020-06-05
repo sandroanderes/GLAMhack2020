@@ -7,10 +7,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script>
   // Go To Top Button
-  //Get the button:
   mybutton = document.getElementById("myBtn");
-
-  // When the user scrolls down 20px from the top of the document, show the button
   window.onscroll = function() {
     scrollFunction()
   };
@@ -22,11 +19,9 @@
       mybutton.style.display = "none";
     }
   }
-
-  // When the user clicks on the button, scroll to the top of the document
   function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0;
   }
 </script>
 </body>
