@@ -18,8 +18,8 @@ function get_all_articles()
 {
     $pdo = get_db_connection();
     $statement = $pdo->prepare("SELECT * FROM articles");
-    $statement->execute();
-    return $row = $statement;
+    $articles = $statement->execute();
+    return $articles;
 
     /*
     if ($statement->execute()) {
