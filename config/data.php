@@ -24,3 +24,14 @@ function get_teas_articles()
     $result = $statement->fetchAll();
     return $result;
 }
+
+// SELECT Artikel by ID
+function get_article_by_id($id)
+{
+    $pdo = get_db_connection();
+
+    $statement = $pdo->prepare("SELECT * FROM articles WHERE id = $id");
+    $statement->execute();
+    $result = $statement->fetch();
+    return $result;
+}

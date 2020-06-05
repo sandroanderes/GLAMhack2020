@@ -8,6 +8,7 @@ require_once('config/data.php');
 if(isset($_GET['id'])){
     $article_id = $_GET['id'];
     echo $article_id;
+    $article = get_article_by_id($article_id);
 } else{
     echo "The content could not have been load";
 }
@@ -20,7 +21,7 @@ if(isset($_GET['id'])){
 
 <!-- ==== CONTENT ==== -->
 <div class="container mt-3">
-    <h1>Articles</h1>
+    <h1><?php $article['title'] ?></h1>
 
 
     <!-- Optional JavaScript -->
