@@ -17,18 +17,16 @@ function get_db_connection()
 function get_all_articles()
 {
     $pdo = get_db_connection();
-    $result = $pdo->query("SELECT * FROM articles");
-    return $result->fetchAll();
-    /*
+
     $statement = $pdo->prepare("SELECT * FROM articles");
     $statement->execute();
-    $result = $statement;
-    return $result;
     if ($statement->execute()) {
         while ($row = $statement->fetch()) {
             echo $row['title'] . "<br />";
         }
-    } else {
+
+    }    /* 
+    else {
         echo "SQL Error <br />";
         echo $statement->queryString . "<br />";
         echo $statement->errorInfo()[2];
