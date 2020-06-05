@@ -32,6 +32,6 @@ function get_article_by_id($id)
 
     $statement = $pdo->prepare("SELECT * FROM articles WHERE id = $id");
     $statement->execute();
-    $result = $statement->fetch();
+    $result = $statement->fetchAll();
     return $result;
 }
