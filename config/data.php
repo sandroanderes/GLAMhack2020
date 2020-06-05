@@ -4,32 +4,6 @@
 // Verbindung herstellen
 function get_db_connection()
 {
-    $servername = "localhost:3306";
-    $username = "hacker20";
-    $password = "Welcome1";
-    $dbname = "GLAMhack2020";
-
-    global $servername, $username, $password, $dbname;
-    $conn = new mysqli($servername, $username, $password, $dbname);
-
-    // Verbindung prüfen
-    if ($conn->connect_error) {
-        die("Verbindung fehlgeschlagen: " . $conn->connect_error);
-    }
-    echo "Verbindung erfolgreich";
-    return $conn;
-}
-/*
-function get_db_connection()
-{
-
-    $base_url = "https://glamhack2020.sandroanderes.ch/";
-
-    $db_host = "localhost:3306";
-    $db_user = "hacker20";
-    $db_pass = "Welcome1";
-    $db_charset = "utf8mp4";
-
     global $db_host, $db_name, $db_user, $db_pass, $db_charset;
 
     $dsn = "mysql:host=$db_host;dbname=$db_name;charset=$db_charset";
@@ -48,18 +22,15 @@ function get_db_connection()
     // $db gespeicherte Datenbankverbindung zurückgeben
     return $db;
 }
-*/
+
 
 // SELECT everything
 function get_all_articles()
 {
-    $conn = get_db_connection();
-    $sql = "SELECT * FROM 'articles-1914'";
-    $result = $conn->query($sql);
-    /*$db = get_db_connection();
+    $db = get_db_connection();
     $sql = "SELECT * FROM 'articles-1914'";
     $result = $db->query($sql);
-    return $result->fetchAll();*/
+    return $result->fetchAll();
 }
 
 // SELECT everything of spez. article
