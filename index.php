@@ -14,7 +14,7 @@ require_once('config/data.php');
 
 <!-- ==== CONTENT ==== -->
 <div class="container mt-3">
-    <h1>Home</h1>
+    <h1>Boum</h1>
     <!-- Place content here -->
 </div>
 
