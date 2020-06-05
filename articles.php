@@ -19,7 +19,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT * FROM articles-1914";
+$sql = "SELECT * FROM article";
 $result = $conn->query($sql);
 echo $result;
 
