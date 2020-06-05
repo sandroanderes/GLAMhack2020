@@ -17,7 +17,7 @@ require_once('config/data.php');
     <!-- Place content here -->
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
     <?php 
-      get_all_articles();
+      $articles = get_all_articles();
       foreach ($article as $articles){
     ?>
         <div class="col mb-4">
