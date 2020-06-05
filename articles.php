@@ -28,23 +28,10 @@ require_once('config/data.php');
             <h5 class="card-title"><?php echo $article['title']; ?></h5>
             <p class="teaser" class="card-text"><?php echo $article['teaser']; ?></p>
           </div>
+          <button class="btn btn-primary">Read more</button>
           <div class="card-footer">
             <small class="text-muted"><?php echo $article['date']; ?></small>
           </div>
-          <button class="btn">Read more</button>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-img">
-          
-        </div>
-        <div class="timeline-content timeline-card js--fadeInRight">
-          <div class="timeline-img-header">
-            <h2><?php echo $article['title']; ?></h2>
-          </div>
-          <div class="date"><?php echo $article['date']; ?></div>
-          <p><?php echo $article['teaser']; ?></p>
         </div>
       </div>
     <?php } ?>
