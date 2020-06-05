@@ -13,3 +13,9 @@ The Historical database of Le Temps comprises 3 newspapers over 200 years. The *
 ### Idea
 We would like to translate these historical newspaper articles from French to German using a public API (DeepL, Google Translate) and make them available to the German speaking public.
 In addition, some important articles, such as articles about the First World War or the latent division of German-speaking Switzerland and the Romands, known as the "Röstigraben", will be elaborated in greater depth as headlines.
+
+## Project participants
+- Sandro Anderes
+- Bernahard Aebersold
+- David Indumi
+- Frank Zinsli

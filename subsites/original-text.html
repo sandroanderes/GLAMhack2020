@@ -225,6 +225,13 @@
           xmlDoc.getElementsByTagName('entity')[0].childNodes[2].innerHTML;
       }
     }
+
+    var request = new XMLHttpRequest();
+
+    // Initialize a request
+    request.open('get', 'https://github.com/sandroanderes/JDG-GDLOpenData')
+    // Send it
+    request.send()
   </script>
 </body>
 
