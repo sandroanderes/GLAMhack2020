@@ -15,6 +15,7 @@ require_once('config/data.php');
 <!-- ==== CONTENT ==== -->
 <div class="container mt-3">
     <h1>Home What  the fuck is Github</h1>
+    <h2>IDK</h2>
     <!-- Place content here -->
 </div>
 
