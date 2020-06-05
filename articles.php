@@ -26,10 +26,10 @@ require_once('config/data.php');
           <img src="<?php echo $article['img_url']; ?>" class="card-img-top">
           <div class="card-body">
             <h5 class="card-title"><?php echo $article['title']; ?></h5>
-            <h6 class="card-subtitle mb-2 text-muted"><?php echo $article['newspaper_name']?> <br> <?php echo $article['date']?> </h6>
+            <h6 class="card-subtitle mb-2 text-muted"><?php echo $article['newspaper_name']?> - <?php echo $article['date']?> </h6>
             <p class="teaser" class="card-text"><?php echo $article['teaser']; ?></p>
           </div>
-          <button class="btn btn-primary">Read more</button>
+          <button class="btn btn-primary"><a href="article.php"> Read more </a></button>
         </div>
       </div>
     <?php } ?>
