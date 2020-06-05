@@ -1,9 +1,9 @@
 <!-- ===== Controller ===== -->
 <?php 
 // Alle Site-relevanten Werte
-require_once('config/config.php');
+require_once('./config/config.php');
 // Alle DB-Abfragen
-require_once('config/data.php');
+require_once('./config/data.php');
 
 ?>
 
