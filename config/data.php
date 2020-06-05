@@ -4,7 +4,11 @@
 // Verbindung herstellen
 function get_db_connection()
 {
-    global $servername, $username, $password, $dbname;
+    $servername = "localhost:3306";
+    $username = "hacker20";
+    $password = "Welcome1";
+    $dbname = "GLAMhack2020";
+
     $conn = new mysqli($servername, $username, $password, $dbname);
 
     // Verbindung prüfen
@@ -12,7 +16,6 @@ function get_db_connection()
         die("Verbindung fehlgeschlagen: " . $conn->connect_error);
     }
     echo "Verbindung erfolgreich";
-    return $conn;
 }
 /*
 function get_db_connection()
@@ -48,13 +51,21 @@ function get_db_connection()
 // SELECT everything
 function get_all_articles()
 {
-    $conn = get_db_connection();
+    $servername = "localhost:3306";
+    $username = "hacker20";
+    $password = "Welcome1";
+    $dbname = "GLAMhack2020";
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    // Verbindung prüfen
+    if ($conn->connect_error) {
+        die("Verbindung fehlgeschlagen: " . $conn->connect_error);
+    }
+    echo "Verbindung erfolgreich";
+
     $sql = "SELECT * FROM articles-1914";
     $result = $conn->query($sql);
-    /*$db = get_db_connection();
-    $sql = "SELECT * FROM 'articles-1914'";
-    $result = $db->query($sql);
-    return $result->fetchAll();*/
 }
 
 // SELECT everything of spez. article
