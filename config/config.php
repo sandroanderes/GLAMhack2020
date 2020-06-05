@@ -5,9 +5,10 @@ $username = "hacker20";          // Your database user id
 $password = "Welcome1";          // Your password
 
 //////// Do not Edit below /////////
+
 try {
-$pdo = new PDO('mysql:host='.$host_name.';dbname='.$database, $username, $password);
+    $pdo = new PDO('mysql:host=' . $host_name . ';dbname=' . $database, $username, $password);
 } catch (PDOException $e) {
-print "Error!: " . $e->getMessage() . "<br/>";
-die();
+    print "Error!: " . $e->getMessage() . "<br/>";
+    die();
 }

@@ -4,18 +4,37 @@
 // Verbindung herstellen
 
 require "config.php";
- 
-$statement = $pdo->prepare("SELECT * FROM articles");
- 
-if($statement->execute()) {
-    while($row = $statement->fetch()) {
-        echo $row['title']."<br />";
-    } 
-} else {
-    echo "SQL Error <br />";
-    echo $statement->queryString."<br />";
-    echo $statement->errorInfo()[2];
+
+
+
+function get_db_connection()
+{
+    global $host_name, $database, $username, $password;
+    try {
+        $pdo = new PDO('mysql:host=' . $host_name . ';dbname=' . $database, $username, $password);
+    } catch (PDOException $e) {
+        print "Error!: " . $e->getMessage() . "<br/>";
+        die();
+    }
+    return $pdo;
 }
+
+function get_all_articles()
+{
+    $pdo = get_db_connection();
+    $statement = $pdo->prepare("SELECT * FROM articles");
+
+    if ($statement->execute()) {
+        while ($row = $statement->fetch()) {
+            echo $row['title'] . "<br />";
+        }
+    } else {
+        echo "SQL Error <br />";
+        echo $statement->queryString . "<br />";
+        echo $statement->errorInfo()[2];
+    }
+}
+
 
 
 

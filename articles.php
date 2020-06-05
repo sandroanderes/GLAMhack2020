@@ -15,7 +15,9 @@ require_once('config/data.php');
 <div class="container mt-3">
     <h1>Articles</h1>
     <!-- Place content here -->
-
+<?php 
+get_all_articles();
+?>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
         <div class="col mb-4">
           <div class="card">
