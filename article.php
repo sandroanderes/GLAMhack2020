@@ -15,23 +15,6 @@ require_once('config/data.php');
 <div class="container mt-3">
     <h1>Articles</h1>
 
-    <!-- Place content here -->
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-        <?php
-        $article = get_all_articles();
-        ?>
-        <div class="col mb-4">
-            <div class="card">
-                <img src="<?php echo $article['img_url']; ?>" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title"><?php echo $article['title']; ?></h5>
-                    <h6 class="card-subtitle mb-2 text-muted"><?php echo $article['newspaper_name'] ?> - <?php echo $article['date'] ?> </h6>
-                    <p class="teaser" class="card-text"><?php echo $article['teaser']; ?></p>
-                </div>
-                <button class="btn btn-primary">Read more</button>
-            </div>
-        </div>
-    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -19,7 +19,7 @@ function get_all_articles()
 {
     $pdo = get_db_connection();
 
-    $statement = $pdo->prepare("SELECT * FROM articles");
+    $statement = $pdo->prepare("SELECT title, teaser, img_url, date, newspaper_name FROM articles");
     $statement->execute();
     $result = $statement->fetchAll();
     return $result;
