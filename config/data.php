@@ -2,6 +2,7 @@
 
 // Datenbankverbindung
 // Verbindung herstellen
+/*
 function get_db_connection()
 {
     global $db_host, $db_name, $db_user, $db_pass, $db_charset;
@@ -21,10 +22,11 @@ function get_db_connection()
 
     // $db gespeicherte Datenbankverbindung zurückgeben
     return $db;
-}
+}*/
 
 
 // SELECT everything
+/*
 function get_all_articles()
 {
     $db = get_db_connection();

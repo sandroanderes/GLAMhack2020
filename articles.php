@@ -19,7 +19,7 @@ if (!$conn) {
 }
 echo "Connected successfully";
 
-$sql = "SELECT * FROM articles-1914";
+$sql = "SELECT * FROM 'articles-1914'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
