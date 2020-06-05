@@ -5,7 +5,6 @@ require_once('config/config.php');
 // Alle DB-Abfragen
 require_once('config/data.php');
 
-$articles = get_all_articles();
 ?>
 
 <!-- ===== Start View ===== -->
@@ -19,7 +18,8 @@ $articles = get_all_articles();
 
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
       <?php 
-          foreach ($articles as $article) {
+        $articles = get_all_articles();
+        foreach ($articles as $article) {
       ?>
         <div class="col mb-4">
           <div class="card">
