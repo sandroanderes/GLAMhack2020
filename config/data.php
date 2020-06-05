@@ -1,6 +1,19 @@
 <?php
 
 // Datenbankverbindung
+// Verbindung herstellen
+function get_db_connection()
+{
+    global $servername, $username, $password, $dbname;
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    // Verbindung prüfen
+    if ($conn->connect_error) {
+        die("Verbindung fehlgeschlagen: " . $conn->connect_error);
+    }
+    echo "Verbindung erfolgreich";
+    return $conn;
+}
 /*
 function get_db_connection()
 {
@@ -35,13 +48,17 @@ function get_db_connection()
 // SELECT everything
 function get_all_articles()
 {
-    $db = get_db_connection();
+    $conn = get_db_connection();
+    $sql = "SELECT * FROM 'articles-1914'";
+    $result = $conn->query($sql);
+    /*$db = get_db_connection();
     $sql = "SELECT * FROM 'articles-1914'";
     $result = $db->query($sql);
-    return $result->fetchAll();
+    return $result->fetchAll();*/
 }
 
 // SELECT everything of spez. article
+/*
 function get_article_by_id($id)
 {
     $db = get_db_connection();
