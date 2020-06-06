@@ -27,7 +27,6 @@ require_once "templates/header.php";
       </div>
     </div>
     <?php 
-    <?php
     $articles = get_article_for_timeline();
     foreach ($articles as $article) {
     ?>
