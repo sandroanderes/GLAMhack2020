@@ -17,12 +17,12 @@ $article_id = $_GET['id'];
 <!-- ==== CONTENT ==== -->
 <div class="container mt-3">
     <?php $article = get_article_by_id($_GET['id']); ?>
-    <h1><?php echo $article['title'] ?></h1>
+    <h1><?php echo $article['title_f'] ?></h1>
     <p class="text-muted"><?php echo $article['newspaper_name'] ?> - <?php echo $article['date'] ?></p>
-    <p><strong><?php echo $article['teaser'] ?></strong></p>
+    <p><strong><?php echo $article['teaser_f'] ?></strong></p>
     <img src="<?php echo $article['img_url']; ?>">
     <p class="mt-2 text-muted">Original-Text</p>
-    <p><?php echo $article['content'] ?></p>
+    <p><?php echo $article['content_f'] ?></p>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

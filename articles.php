@@ -29,7 +29,33 @@ require_once('config/data.php');
             <h6 class="card-subtitle mb-2 text-muted"><?php echo $article['newspaper_name']?> - <?php echo $article['date']?> </h6>
             <p class="teaser" class="card-text"><?php echo $article['teaser']; ?></p>
           </div>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal<?php echo $article['id']; ?>">
+          Mehr lesen
+        </button>
+
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Sprache auswählen</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        In welcher Sprache soll der gewählte Zeitungsartikel dargestellt werden?
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-secondary" href="article.php?id=<?php echo $article['id']; ?>" data-dismiss="modal">Deutsch</a>
+        <a  class="btn btn-primary" href="article.php?id=<?php echo $article_f['id']; ?>" data-dismiss="modal">Französisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+
           <a class="btn btn-primary" href="article.php?id=<?php echo $article['id']; ?>"> Read more </a>
+
+
         </div>
       </div>
     <?php } ?>
