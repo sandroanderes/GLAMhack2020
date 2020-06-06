@@ -185,6 +185,10 @@ img.artimg {
 .article h1 {
   font-size: 50px; }
 
+.card-img-top {
+  height: 300px;
+  object-fit: cover; }
+
 @media screen and (max-width: 768px) {
   .timeline::before {
     left: 50px; }
