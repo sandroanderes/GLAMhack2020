@@ -32,7 +32,7 @@ require_once('templates/header.php');
             <h6 class="card-subtitle mb-2 text-muted"><?php echo $article['newspaper_name'] ?> - <?php echo $article['date'] ?> </h6>
             <p class="teaser" class="card-text"><?php echo $article['teaser']; ?></p>
           </div>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalCenter<?php echo $article['id']; ?>">
+          <button type="button" class="btn btn-primary btn-spacing" data-toggle="modal" data-target="#ModalCenter<?php echo $article['id']; ?>">
             Mehr anzeigen
           </button>
 
