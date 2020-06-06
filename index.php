@@ -36,10 +36,10 @@ require_once "templates/header.php";
     </div>
     <?php } ?>
 
-    <!-- 
+    
     <div class="timeline-item">
       <div class="timeline-img"></div>
-      <div class="timeline-content timeline-card js--fadeInRight">
+      <div class="timeline-content timeline-card js--fadeInBottom">
         <div class="timeline-img-header">
           <h2>Card Title</h2>
         </div>
@@ -47,7 +47,7 @@ require_once "templates/header.php";
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
       </div>
     </div>
-    -->
+   
 
   </div>
 </section>
