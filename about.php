@@ -17,10 +17,10 @@ require_once('templates/header.php');
 
 <!-- ==== CONTENT ==== -->
 <!-- ==== CONTENT ==== -->
-<div class="container article mt-3">
+<div class="container article about mt-3">
     <h1>Über</h1>
     <!-- Place content here -->
-    <section style="padding-top: 40px !important; padding-bottom: unset !important">
+    <section style="padding-top: 48px !important; padding-bottom: unset !important">
         <h2>Über uns</h2>
         <article>
             <p>Diese Webseite entstand im Rahmen des 6. Swiss Open Cultural Data Hackathon vom 5. + 6. Juni 2020. Die Motivation hinter diesem Projekt ist es aufzuzeigen, welche Bedeutung der kostenfreie und bedingungslose Zugang zu Kulturdaten für die Gesellschaft haben kann. Unser Projekt ist als Aufforderung an Museen und Bibliotheken zu verstehen, ihre Kulturdaten der Öffentlichkeit zugänglich zu machen. <br><br>

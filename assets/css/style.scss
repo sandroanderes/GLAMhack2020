@@ -231,7 +231,12 @@ code{
 .btn-primary {
     color: #fff;
     background-color: $accent;
-    border-color: $accent;
+	border-color: $accent;
+	&:hover,&:active {
+		color: #fff;
+		background-color: #0f355f;
+		border-color: #0f355f;
+	}
 }
 
 .btn-spacing{
@@ -242,6 +247,7 @@ img.artimg{
 	width: 100%;
 	object-fit: cover;
 }
+
 .article h1{
 	font-size: 50px;;
 }
@@ -251,13 +257,22 @@ img.artimg{
     object-fit: cover;
 }
 
+.about a{
+	color: $accent;
+	text-decoration: none;
+	&:hover,&:active{
+		color: #0f355f;
+		text-decoration: none;
+	}
+}
+
 @media screen and (max-width: 768px) {
 
 	.timeline {
 
 		&::before {
 			left: 50px;
-			
+
 		}
 
 		.timeline-img {
