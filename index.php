@@ -46,7 +46,7 @@ require_once "templates/header.php";
 
           <a style="text-decoration: none; color: none;" data-toggle="modal" data-target="#ModalCenter<?php echo $article['id']; ?>">
             <div class="timeline-content timeline-card js--fadeInBottom">
-              <div class="timeline-img-header" style="linear-gradient(to bottom, rgba(255, 255, 255, 0.52), rgba(0, 0, 0, 0.73))), background-image:url(<?php echo $article['img_url']; ?>)">
+              <div class="timeline-img-header" style="linear-gradient(to bottom, rgba(255, 255, 255, 0.52), rgba(0, 0, 0, 0.73)), url(<?php echo $article['img_url']; ?>)">
                 <h2><?php echo $article['title']; ?></h2>
               </div>
               <div class="date"><?php echo $article['date']; ?></div>
