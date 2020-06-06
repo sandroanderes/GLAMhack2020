@@ -21,7 +21,7 @@ require_once "templates/header.php";
     foreach ($articles as $article){
     ?>
     <div class="timeline-item">
-    <img src="<?php echo $article['img_url']; ?>" class="timeline-img">
+      <div class="timeline-img"></div>
 
       <div class="timeline-content timeline-card js--fadeInLeft">
         <div class="timeline-img-header">
