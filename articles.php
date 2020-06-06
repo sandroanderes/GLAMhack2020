@@ -5,11 +5,14 @@ require_once('config/config.php');
 // Alle DB-Abfragen
 require_once('config/data.php');
 
+$currentpage = "articles";
+
+require_once('templates/header.php');
+
 ?>
 
 <!-- ===== Start View ===== -->
 <!-- == HEADER == -->
-<?php require_once('templates/header.php'); ?>
 
 <!-- ==== CONTENT ==== -->
 <div class="container mt-3">
