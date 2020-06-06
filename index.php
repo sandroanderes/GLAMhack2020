@@ -21,10 +21,10 @@ require_once "templates/header.php";
     foreach ($articles as $article){
     ?>
     <div class="timeline-item">
-    <a href="article.php?id=<?php echo $article['id']; ?>">
+    
       <div class="timeline-img"></div>
-    </a>
-
+    
+    <a href="article.php?id=<?php echo $article['id']; ?>">
       <div class="timeline-content timeline-card js--fadeInBottom">
         <div class="timeline-img-header" style="background-image:url(<?php echo $article['img_url'];?>)">
           <h2><?php echo $article['title']; ?></h2>
@@ -32,6 +32,7 @@ require_once "templates/header.php";
         <div class="date"><?php echo $article['date']; ?></div>
         <p><?php echo $article['teaser']; ?></p>
       </div>
+      </a>
     </div>
     <?php } ?>
 
