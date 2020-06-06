@@ -3,20 +3,30 @@
 require_once('config/config.php');
 // Alle DB-Abfragen
 require_once('config/data.php');
-
+$currentpage = "timeline";
 require_once "templates/header.php";
+
 ?>
 
 <header>
   <div class="container text-center">
-    <h1>1914 & 2020 in a Timeline</h1>
+    <h1>1914 in a Timeline</h1>
     <p>6th Swiss Open Cultural Data Hackathon</p>
   </div>
 </header>
 
+
 <section class="timeline">
   <div class="container">
-    <?php
+  <div class="row maindate">
+      <div class="col-sm text-center">
+        <h2>1914</h2>
+      </div>
+      <div class="col-sm text-center">
+        <h2>2020</h2>
+      </div>
+    </div>
+    <?php 
     $articles = get_article_for_timeline();
     foreach ($articles as $article) {
     ?>
@@ -53,8 +63,6 @@ require_once "templates/header.php";
             </div>
           </div>
         </div>
-
-
 
       </div>
     <?php } ?>
