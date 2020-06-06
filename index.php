@@ -23,7 +23,7 @@ require_once "templates/header.php";
         <h2>1914</h2>
       </div>
       <div class="col-sm text-center">
-        <h2>2020</h2>
+        <h2>Heute</h2>
       </div>
     </div>
     <?php 
@@ -36,7 +36,7 @@ require_once "templates/header.php";
 
         <a style="text-decoration: none; color: none;" data-toggle="modal" data-target="#ModalCenter<?php echo $article['id']; ?>">
           <div class="timeline-content timeline-card js--fadeInBottom">
-            <div class="timeline-img-header" style="background-image:url(<?php echo $article['img_url']; ?>)">
+            <div class="timeline-img-header" style="linear-gradient(to bottom, rgba(255, 255, 255, 0.52), rgba(0, 0, 0, 0.73))), background-image:url(<?php echo $article['img_url']; ?>)">
               <h2><?php echo $article['title']; ?></h2>
             </div>
             <div class="date"><?php echo $article['date']; ?></div>
@@ -56,7 +56,7 @@ require_once "templates/header.php";
               <div class="modal-body">
                 In welcher Sprache soll der gewählte Zeitungsartikel dargestellt werden?
               </div>
-              <div class="modal-footer">
+              <div class="modal-footer justify-content-center">
                 <a class="btn btn-secondary" href="article.php?id=<?php echo $article['id']; ?>">Deutsch</a>
                 <a class="btn btn-primary" href="article_f.php?id=<?php echo $article['id']; ?>">Französisch</a>
               </div>
