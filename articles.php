@@ -26,32 +26,32 @@ require_once('config/data.php');
           <img src="<?php echo $article['img_url']; ?>" class="card-img-top">
           <div class="card-body">
             <h5 class="card-title"><?php echo $article['title']; ?></h5>
-            <h6 class="card-subtitle mb-2 text-muted"><?php echo $article['newspaper_name']?> - <?php echo $article['date']?> </h6>
+            <h6 class="card-subtitle mb-2 text-muted"><?php echo $article['newspaper_name'] ?> - <?php echo $article['date'] ?> </h6>
             <p class="teaser" class="card-text"><?php echo $article['teaser']; ?></p>
           </div>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter<?php echo $article['id']; ?>">
-  Launch demo modal
-</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalCenter<?php echo $article['id']; ?>">
+            Launch demo modal
+          </button>
 
-        <div class="modal fade" id="exampleModalCenter<?php echo $article['id']; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        In welcher Sprache soll der gewählte Zeitungsartikel dargestellt werden?
-      </div>
-      <div class="modal-footer">
-        <a class="btn btn-secondary" href="article.php?id=<?php echo $article['id']; ?>">Deutsch</a>
-        <a  class="btn btn-primary" href="article_f.php?id=<?php echo $article['id']; ?>">Französisch</a>
-      </div>
-    </div>
-  </div>
-</div>
+          <div class="modal fade" id="ModalCenter<?php echo $article['id']; ?>" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle<?php echo $article['id']; ?>" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="ModalLongTitle<?php echo $article['id']; ?>">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  In welcher Sprache soll der gewählte Zeitungsartikel dargestellt werden?
+                </div>
+                <div class="modal-footer">
+                  <a class="btn btn-secondary" href="article.php?id=<?php echo $article['id']; ?>">Deutsch</a>
+                  <a class="btn btn-primary" href="article_f.php?id=<?php echo $article['id']; ?>">Französisch</a>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <!--<a class="btn btn-primary" href="article.php?id=<?php echo $article['id']; ?>"> Read more </a>-->
 
