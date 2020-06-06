@@ -69,7 +69,8 @@ header {
     transform: translateX(-50%); }
 
 .padding-facts {
-  padding: 16px; }
+  padding: 16px;
+  margin-bottom: 0px; }
 
 .timeline-item {
   width: 100%;
