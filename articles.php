@@ -19,7 +19,7 @@ require_once('templates/header.php');
   <h1>Articles</h1>
 
   <!-- Place content here -->
-  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+  <div class="row row-cols-1 row-cols-md-2">
     <?php
     $articles = get_teas_articles();
     foreach ($articles as $article) {
