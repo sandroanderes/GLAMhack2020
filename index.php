@@ -30,7 +30,6 @@ require_once "templates/header.php";
     $articles = get_article_for_timeline();
     foreach ($articles as $article) {
       if ($article['fact'] == 1) {
-        echo $article['title'];
     ?>
         <div class="timeline-item">
           <a style="text-decoration: none; color: none;">
