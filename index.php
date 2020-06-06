@@ -24,7 +24,7 @@ require_once "templates/header.php";
     
       <div class="timeline-img"></div>
     
-    <a href="article.php?id=<?php echo $article['id']; ?>">
+    <a style="text-decoration: none; color: none;" href="article.php?id=<?php echo $article['id']; ?>">
       <div class="timeline-content timeline-card js--fadeInBottom">
         <div class="timeline-img-header" style="background-image:url(<?php echo $article['img_url'];?>)">
           <h2><?php echo $article['title']; ?></h2>
