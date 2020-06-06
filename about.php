@@ -48,7 +48,7 @@ require_once('templates/header.php');
         </article>
     </section>
     <section style="padding-top: 40px !important; padding-bottom: unset !important">
-        <h2>Titel</h2>
+        <h2>Swiss Open Cultural Data Hackathon</h2>
         <article>
             <p>Die diesjährige Ausgabe des Swiss Open Cultural Data Hackathon fand vom 5. bis 6. Juni 2020 als reiner Online-Hackathon statt. Der Event wurde virtuell vom Schweizerischen Institut für Informationswissenschaft an der Fachhochschule Graubünden in Zusammenarbeit mit dem Institut für Multimedia-Produktion durchgeführt. Der Schwerpunkt des GLAMhack liegt auf Linked Open Data, Maschinelles Lernen, Mensch-Computer-Interaktion und Crowdsourcing.</p>
         </article>
