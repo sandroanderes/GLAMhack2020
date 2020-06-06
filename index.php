@@ -25,7 +25,7 @@ require_once "templates/header.php";
 
       <div class="timeline-content timeline-card js--fadeInLeft">
         <div class="timeline-img-header">
-          <h2>Card Title</h2>
+          <h2><?php echo $article['title']; ?></h2>
         </div>
         <div class="date">25 May 1914</div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
