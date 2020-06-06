@@ -5,9 +5,8 @@ require_once('config/config.php');
 // Alle DB-Abfragen
 require_once('config/data.php');
 
-
+// Get the id from URL
 $article_id = $_GET['id'];
-echo $article_id;
 
 ?>
 
@@ -17,8 +16,11 @@ echo $article_id;
 
 <!-- ==== CONTENT ==== -->
 <div class="container mt-3">
-    <?php $param = get_article_by_id($_GET['id']); ?>
-    <h1><?php echo $param['title'] ?></h1>
+    <?php $article = get_article_by_id($_GET['id']); ?>
+    <h1><?php echo $article['title'] ?></h1>
+    <p><strong><?php echo $article['teaser'] ?></strong></p>
+    <img src="<?php echo $article['img_url']; ?>">
+    <p><?php $article['content'] ?></p>
 
 
     <!-- Optional JavaScript -->
