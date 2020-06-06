@@ -18,9 +18,10 @@ $article_id = $_GET['id'];
 <div class="container mt-3">
     <?php $article = get_article_by_id($_GET['id']); ?>
     <h1><?php echo $article['title'] ?></h1>
+    <p class="text-muted"><?php echo $article['newspaper_name'] ?> - <?php echo $article['date'] ?></p>
     <p><strong><?php echo $article['teaser'] ?></strong></p>
     <img src="<?php echo $article['img_url']; ?>">
-    <p><?php $article['content'] ?></p>
+    <p><?php echo $article['content'] ?></p>
 
 
     <!-- Optional JavaScript -->
