@@ -20,7 +20,7 @@ $article_id = $_GET['id'];
     <h1><?php echo $article['title_f'] ?></h1>
     <p class="text-muted"><?php echo $article['newspaper_name'] ?> - <?php echo $article['date'] ?></p>
     <p><strong><?php echo $article['teaser_f'] ?></strong></p>
-    <img src="<?php echo $article['img_url']; ?>">
+    <img class="artimg" src="<?php echo $article['img_url']; ?>">
     <p class="mt-2 text-muted">Original-Text</p>
     <p><?php echo $article['content_f'] ?></p>
 
