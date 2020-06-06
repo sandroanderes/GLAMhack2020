@@ -6,7 +6,7 @@ function get_db_connection()
 {
     global $host_name, $database, $username, $password;
     try {
-        $pdo = new PDO('mysql:host=' . $host_name . ';dbname=' . $database, $username, $password);
+        $pdo = new PDO('mysql:host=' . $host_name . ';dbname=' . $database, $username, $password, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8") );
     } catch (PDOException $e) {
         print "Error!: " . $e->getMessage() . "<br/>";
         die();
