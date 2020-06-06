@@ -29,10 +29,9 @@ require_once('templates/header.php');
             <ul>
                <li><a href="https://github.com/sandroanderes" target="_blank">Sandro Anderes</a></li>
                <li><a href="https://www.indumi.ch/" target="_blank">David Indumi</a></li>
-               <li>Frank Zinsli</li>
+               <li><a href ="https://github.com/Frankie1996" target="_blank">Frank Zinsli</a></li>
                <li><a href="https://bernhardaebersold.ch/" target="_blank">Bernhard Aebersold</a></li>
             </ul>
-
         </article>
     </section>
     <section style="padding-top: 40px !important; padding-bottom: unset !important">
