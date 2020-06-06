@@ -35,3 +35,14 @@ function get_article_by_id($id)
     $result = $statement->fetch();
     return $result;
 }
+
+// SELECT Artikel for timeline
+function get_article_for_timeline()
+{
+    $pdo = get_db_connection();
+
+    $statement = $pdo->prepare("SELECT * FROM articles WHERE timeline = 1");
+    $statement->execute();
+    $result = $statement->fetch();
+    return $result;
+}
