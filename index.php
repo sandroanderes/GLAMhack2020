@@ -33,7 +33,7 @@ require_once "templates/header.php";
     ?>
         <div class="timeline-item">
           <div class="timeline-content timeline-card js--fadeInBottom">
-            <h2 class="padding-facts"><?php echo $article['title']; ?></h2>
+            <h2 class="padding-facts text-center"><?php echo $article['title']; ?></h2>
           </div>
         </div>
 
