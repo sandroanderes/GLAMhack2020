@@ -36,7 +36,7 @@ require_once "templates/header.php";
     </div>
     <?php } ?>
 
-    <!--
+    <!-- 
     <div class="timeline-item">
       <div class="timeline-img"></div>
       <div class="timeline-content timeline-card js--fadeInRight">
