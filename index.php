@@ -32,7 +32,6 @@ require_once "templates/header.php";
       if ($article['fact'] == 1) {
     ?>
         <div class="timeline-item">
-
           <div class="timeline-content timeline-card js--fadeInBottom">
             <h2><?php echo $article['title']; ?></h2>
           </div>
