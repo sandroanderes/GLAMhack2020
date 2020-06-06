@@ -21,7 +21,7 @@ $article_id = $_GET['id'];
     <p class="text-muted"><?php echo $article['newspaper_name'] ?> - <?php echo $article['date'] ?></p>
     <p><strong><?php echo $article['teaser'] ?></strong></p>
     <img class="artimg" src="<?php echo $article['img_url']; ?>">
-    <p class="mt-2 text-muted">Original-Text</p>
+    <p class="mt-2 text-muted">Original-Text übersetzt</p>
     <p><?php echo $article['content'] ?></p>
 
     <!-- Optional JavaScript -->
