@@ -15,12 +15,12 @@ $article_id = $_GET['id'];
 <?php require_once('templates/header.php'); ?>
 
 <!-- ==== CONTENT ==== -->
-<div class="container mt-3">
+<div class="container article mt-3">
     <?php $article = get_article_by_id($_GET['id']); ?>
     <h1><?php echo $article['title'] ?></h1>
     <p class="text-muted"><?php echo $article['newspaper_name'] ?> - <?php echo $article['date'] ?></p>
     <p><strong><?php echo $article['teaser'] ?></strong></p>
-    <img src="<?php echo $article['img_url']; ?>">
+    <img class="artimg" src="<?php echo $article['img_url']; ?>">
     <p class="mt-2 text-muted">Original-Text</p>
     <p><?php echo $article['content'] ?></p>
 

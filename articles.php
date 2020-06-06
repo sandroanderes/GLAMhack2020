@@ -15,8 +15,8 @@ require_once('templates/header.php');
 <!-- == HEADER == -->
 
 <!-- ==== CONTENT ==== -->
-<div class="container mt-3">
-  <h1>Articles</h1>
+<div class="container article mt-3">
+  <h1>Alle Artikel</h1>
 
   <!-- Place content here -->
   <div class="row row-cols-1 row-cols-md-2">

@@ -17,8 +17,8 @@ require_once('templates/header.php');
 
 <!-- ==== CONTENT ==== -->
 <!-- ==== CONTENT ==== -->
-<div class="container mt-3">
-    <h1>About</h1>
+<div class="container article mt-3">
+    <h1>Über</h1>
     <!-- Place content here -->
     <section style="padding-top: 40px !important; padding-bottom: unset !important">
         <h2>Über uns</h2>
