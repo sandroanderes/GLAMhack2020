@@ -43,6 +43,6 @@ function get_article_for_timeline()
 
     $statement = $pdo->prepare("SELECT * FROM articles WHERE timeline = 1");
     $statement->execute();
-    $result = $statement->fetch();
+    $result = $statement->fetchAll();
     return $result;
 }
