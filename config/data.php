@@ -41,7 +41,7 @@ function get_article_for_timeline()
 {
     $pdo = get_db_connection();
 
-    $statement = $pdo->prepare("SELECT * FROM articles WHERE timeline = 1");
+    $statement = $pdo->prepare("SELECT * FROM `articles` WHERE timeline = 1 ORDER BY `number` ASC ");
     $statement->execute();
     $result = $statement->fetchAll();
     return $result;
