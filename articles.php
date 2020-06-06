@@ -46,8 +46,8 @@ require_once('config/data.php');
         In welcher Sprache soll der gewählte Zeitungsartikel dargestellt werden?
       </div>
       <div class="modal-footer">
-        <a class="btn btn-secondary" href="article.php?id=<?php echo $article['id']; ?>" data-dismiss="modal">Deutsch</a>
-        <a  class="btn btn-primary" href="article_f.php?id=<?php echo $article['id']; ?>" data-dismiss="modal">Französisch</a>
+        <a class="btn btn-secondary" href="article.php?id=<?php echo $article['id']; ?>">Deutsch</a>
+        <a  class="btn btn-primary" href="article_f.php?id=<?php echo $article['id']; ?>">Französisch</a>
       </div>
     </div>
   </div>
