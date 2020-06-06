@@ -8,7 +8,7 @@
 * [About GLAMhack 2020](#About-GLAMhack-2020)
 * [Project Details](#Project-Details)
   * [Open Data Information](#Open-Data-Information)
-  * [Concept / Documentation](#Concept-/-Documentation)
+  * [Concept / Documentation](#Concept--Documentation)
 * [License](#license)
 * [Contact information](#Contact-information)
 
