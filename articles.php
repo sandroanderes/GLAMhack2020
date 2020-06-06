@@ -30,7 +30,7 @@ require_once('config/data.php');
             <p class="teaser" class="card-text"><?php echo $article['teaser']; ?></p>
           </div>
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalCenter<?php echo $article['id']; ?>">
-            Launch demo modal
+            Sprache wählen
           </button>
 
           <div class="modal fade" id="ModalCenter<?php echo $article['id']; ?>" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle<?php echo $article['id']; ?>" aria-hidden="true">
