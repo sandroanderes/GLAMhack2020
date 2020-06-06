@@ -37,7 +37,7 @@ require_once "templates/header.php";
     <?php } ?>
 
     
-    <div class="timeline-item">
+    <!-- <div class="timeline-item">
       <div class="timeline-img"></div>
       <div class="timeline-content timeline-card js--fadeInBottom">
         <div class="timeline-img-header">
@@ -46,7 +46,7 @@ require_once "templates/header.php";
         <div class="date">30 July 2020</div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
       </div>
-    </div>
+    </div> -->
    
 
   </div>
