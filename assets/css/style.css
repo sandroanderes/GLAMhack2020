@@ -151,6 +151,7 @@ header .text-center {
 
 .timeline-card {
   padding: 0 !important;
+  cursor: pointer;
 }
 
 .timeline-card p {
@@ -161,10 +162,6 @@ header .text-center {
 
 .timeline-card a {
   margin-left: 20px;
-}
-
-.timeline-item {
-  cursor: pointer;
 }
 
 .timeline-item .timeline-img-header {
