@@ -8,8 +8,8 @@
 * [About GLAMhack 2020](#About-GLAMhack-2020)
 * [Project Details](#Project-Details)
   * [Open Data Information](#Open-Data-Information)
-  * [Ideation](#Ideation)
-* [Lizenz](#Lizenz)
+  * [Concept / Documentation](#Concept-/-Documentation)
+* [License](#license)
 * [Contact information](#Contact-information)
 
 ## About GLAMhack 2020
@@ -21,7 +21,7 @@ Link to dataset: https://opendata.swiss/de/dataset/journal-de-geneve-gazette-de-
 ### Open Data Information
 The Historical database of Le Temps comprises 3 newspapers over 200 years. The **Journal de Genève** ran from 1826 to 1998, the **Gazette de Lausanne** (under different names) from 1798 to 1998, and the **Nouveau Quotidien** from 1991 to 1998, before the merging to the present **Le Temps**. The full archive was digitized and OCRed (extraction of digital text) in 2008. The project is of interest for the community because newspaper databases are becoming a widespread reality across Europe, calling for dedicated techniques to fully exploit them.
 
-## Ideation
+## Concept / Documentation
 1914 was an interesting year not only because of the beginning of the First World War. The first cars clattered along unpaved dust roads, the first telephone lines crackled, trams drove through rapidly growing cities: Switzerland from the beginning of 1914 was dynamic and ambitious. But the war brought fear and uncertainty to the neutral country.
 
 In our project we take a look at Switzerland in 1914, when Switzerland had 3.8 million inhabitants and life expectancy was around 54 years.
