@@ -10,7 +10,7 @@
   * [Open Data Information](#Open-Data-Information)
   * [Ideation](#Ideation)
 * [Lizenz](#Lizenz)
-* [Contact](#Contact information)
+* [Contact information](#Contact information)
 
 ## About GLAMhack 2020
 The 2020 Edition of the **Swiss Open Cultural Data Hackathon** will take place on 5-6 June as an ONLINE hackathon. This edition is virtually hosted by the Swiss Institute for Information Science at the FHGR Chur, in collaboration with the Institute for Multimedia Production. The focus of the **GLAMhack** will lie on Linked Open Data, Machine Learning, Human-Computer-Interaction and Crowdsourcing. Once again, we are happy to collaborate with Wikimedia CH, infoclio.ch and other members of the Friends of OpenGLAM Network.
@@ -34,15 +34,13 @@ On Opendata.swiss we found the data of two French-speaking Swiss newspapers from
 
 The translated articles are being published on a website and are being enriched with similar articles from nowadays.
 
-Link to the prototype: https://glamhack2020.sandroanderes.ch/
-
 # License
 Distributed under the MIT license. For more information, see 'LICENSE'.
 
 # Contact information
-Sandro Anderes - [sandroanderes.ch](https://sandroanderes.ch) - hi@sandroanderes.ch
-Frank Zinsli - [frankzinsli.ch](https://frankzinsli.ch) - frank.zinsli@gmail.com
-Bernhard Aebersold - [bernhardaebersold.ch](https://bernhardaebersold.ch) - beni.aebersold@gmail.com
+Sandro Anderes - https://sandroanderes.ch - hi@sandroanderes.ch<br>
+Frank Zinsli - https://frankzinsli.ch - frank.zinsli@gmail.com<br>
+Bernhard Aebersold - https://bernhardaebersold.ch - beni.aebersold@gmail.com<br>
 David Indiumi
 
-Projekt Link: https://glamhack2020.sandroanderes.ch/
+Projekt link: https://glamhack2020.sandroanderes.ch/
