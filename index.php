@@ -36,6 +36,7 @@ require_once "templates/header.php";
           <div class="timeline-content timeline-card js--fadeInBottom">
             <h2><?php echo $article['title']; ?></h2>
           </div>
+        </div>
 
         <?php } else { ?>
           <div class="timeline-item">
