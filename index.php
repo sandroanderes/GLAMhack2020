@@ -24,7 +24,7 @@ require_once "templates/header.php";
       <div class="timeline-img"></div>
 
       <div class="timeline-content timeline-card js--fadeInLeft">
-        <div class="timeline-img-header">
+        <img class="timeline-img-header" src="<?php echo $article['img_url']; ?>">
           <h2><?php echo $article['title']; ?></h2>
         </div>
         <div class="date"><?php echo $article['date']; ?></div>
