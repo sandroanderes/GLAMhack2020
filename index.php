@@ -29,7 +29,11 @@ require_once "templates/header.php";
     <?php 
     $articles = get_article_for_timeline();
     foreach ($articles as $article) {
+      if($article['fact'] == 1){
+        echo $article['title'];
     ?>
+
+    <?php }else { ?>
       <div class="timeline-item">
 
         <div class="timeline-img"></div>
@@ -65,7 +69,7 @@ require_once "templates/header.php";
         </div>
 
       </div>
-    <?php } ?>
+    <?php }} ?>
   </div>
 </section>
 
