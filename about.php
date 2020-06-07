@@ -43,7 +43,9 @@ require_once('templates/header.php');
     <section style="padding-top: 40px !important; padding-bottom: unset !important">
         <h2>Das Projekt</h2>
         <article>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, temporibus fuga. Magni obcaecati, voluptatibus cumque veniam odio nulla esse vero autem minima. Blanditiis molestias eos, impedit porro aut accusantium adipisci?</p>
+            <p>Der Ausbruch des Ersten Weltkrieges, der aufkommende technische Fortschritt und nationale Spannungen in der Schweiz: Das Jahr 1914 hatte es in sich. Diesem geschichtsträchtigen Jahr wollen wir mit unserem Projekt eine grössere Bedeutung zukommen lassen. Dafür recherchierten wir wichtige Ereignisse von 1914 und durchsuchten die Artikel der beiden französischsprachigen Schweizer Zeitungen. Wir übersetzten die Artikel mit DeepL anschliessend manuell und speicherten die Artikel in einer eigenen Datenbank.<br>
+            Für die Publikation auf einer Webseite programmierten wir eine Timeline und stellten den Originalartikeln von 1914 einige aktuellere Artikel gegenüber. Oftmals wurde vor über 100 Jahren über die gleichen Themen wie heute berichtet.
+            </p>
         </article>
     </section>
     <section style="padding-top: 40px !important; padding-bottom: unset !important">
